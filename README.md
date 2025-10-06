@@ -14,5 +14,5 @@ _**Porque mantener viva su esencia y recordar joyas ocultas es mantener vivo el 
   - **Primary**: `#212529` _Un gris que destaca navs y usado para el texto._  
   - **Secondary**: `#ffc107` _Un amarillo vívido usado en los headers._
   - **Alert**: `#ffc107` _El mismo amarillo, usado en botones._
-### Imagen general de los colores
-![Colores Utilizados](./assets/img/AdobeColor-My Color Theme.jpeg)
+## Imagen general de los colores
+![Colores Utilizados]("./assets/img/AdobeColor-My Color Theme.jpeg")
