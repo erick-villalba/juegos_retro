@@ -16,3 +16,4 @@ _**Porque mantener viva su esencia y recordar joyas ocultas es mantener vivo el 
   - **Alert**: `#ffc107` _El mismo amarillo, usado en botones._
 ## Imagen general de los colores
 ![Colores Utilizados](https://github.com/erick-villalba/juegos_retro/blob/main/assets/img/AdobeColor-My%20Color%20Theme.jpeg)
+.
