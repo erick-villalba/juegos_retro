@@ -15,4 +15,4 @@ _**Porque mantener viva su esencia y recordar joyas ocultas es mantener vivo el 
   - **Secondary**: `#000000` _Un negro potente usado para el fondo._
   - **Alert**: `#ffc107` _Un amarillo potente, usado para destacar botones o mensajes emergentes._
 ## Imagen general de los colores
-![Colores Utilizados](https://github.com/erick-villalba/juegos_retro/blob/main/assets/img/AdobeColor-My%20Color%20Theme.jpeg)
+![Colores Utilizados](https://github.com/erick-villalba/juegos_retro/blob/dev/assets/img/AdobeColor-My%20Color%20Theme.jpeg)
