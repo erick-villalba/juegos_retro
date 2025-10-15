@@ -1,10 +1,7 @@
 $(document).ready(function () {
-
-  // Mostrar solo la sección de inicio al cargar
   $(".seccion").hide();
   $("#inicio").show();
 
-  // --- Menú de navegación ---
   $("#btn-inicio").click(function () {
     $(".seccion").hide();
     $("#inicio").show();
@@ -25,9 +22,7 @@ $(document).ready(function () {
     $("#contacto").show();
   });
 
-  // --- Botón "Ver más" en los proyectos ---
   $(".btn-detalle").click(function () {
-    // Busca el párrafo de descripción dentro de la misma tarjeta
     var descripcion = $(this).siblings(".descripcion");
     if (descripcion.is(":visible")) {
       descripcion.hide();
@@ -36,7 +31,6 @@ $(document).ready(function () {
     }
   });
 
-  // --- Buscador de proyectos ---
   $("#buscador").on("keyup", function () {
     var texto = $(this).val().toLowerCase();
 
@@ -50,12 +44,11 @@ $(document).ready(function () {
     });
   });
 
-  // --- Validación del formulario ---
   $("#formContacto").submit(function (evento) {
-    evento.preventDefault(); // Evita recargar la página
+    evento.preventDefault();
 
     var email = $("#email").val();
-    var patron = /^[^@\s]+@[^@\s]+\.[^@\s]+$/; // Patrón básico para email
+    var patron = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
 
     if (patron.test(email)) {
       $("#modalConfirmacion").modal("show");
@@ -64,5 +57,8 @@ $(document).ready(function () {
       alert("Por favor, introduce un correo electrónico válido.");
     }
   });
+$(".btn-precio").click(function () {
+  $(this).siblings(".precio").slideToggle();
+});
 
 });
