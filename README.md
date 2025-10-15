@@ -12,8 +12,7 @@ _**Porque mantener viva su esencia y recordar joyas ocultas es mantener vivo el 
 - **Fuente utilizada para los _body_**: [Silkscreen](https://fonts.google.com/specimen/Silkscreen)
 ## ¿Qué colores se han utilizado?
   - **Primary**: `#212529` _Un gris que destaca navs y usado para el texto._  
-  - **Secondary**: `#f8f9fa` _Un negro potente usado para el fondo._
+  - **Secondary**: `#000000` _Un negro potente usado para el fondo._
   - **Alert**: `#ffc107` _Un amarillo potente, usado para destacar botones o mensajes emergentes._
 ## Imagen general de los colores
 ![Colores Utilizados](https://github.com/erick-villalba/juegos_retro/blob/main/assets/img/AdobeColor-My%20Color%20Theme.jpeg)
-.
