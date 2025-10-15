@@ -1,40 +1,256 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Salvemos los juegos retro</title>
+  <title>Salvemos los juegos retro - SPA</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Silkscreen', cursive; }
-    h1, h2, h3 { font-family: 'Press Start 2P', cursive; }
-  </style>
+  <link href="./assets/css/jr-styles.css" rel="stylesheet">
 </head>
-<body class="bg-light">
-  <nav class="navbar navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Inicio</a>
-      <div>
-        <a href="consoles.html" class="btn btn-warning btn-sm">Consolas</a>
-        <a href="events.html" class="btn btn-warning btn-sm">Eventos</a>
-        <a href="register.html" class="btn btn-warning btn-sm">Registro</a>
+
+<body>
+
+  <div class="container text-center my-5">
+
+    <h1 class="mb-5">Salvemos los Juegos Retro</h1>
+
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-3">
+        <div class="card menu-btn" id="btn-inicio">
+          <div class="card-body">
+            <h5 class="card-title">Inicio</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card menu-btn" id="btn-proyectos">
+          <div class="card-body">
+            <h5 class="card-title">Proyectos</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card menu-btn" id="btn-eventos">
+          <div class="card-body">
+            <h5 class="card-title">Eventos</h5>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card menu-btn" id="btn-contacto">
+          <div class="card-body">
+            <h5 class="card-title">Contacto</h5>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
 
-  <header class="bg-warning text-dark text-center py-5">
-    <h1>¡Salvemos los juegos retro!</h1>
-    <h3>Conservando la magia de las consolas clásicas</h3>
-    <hr>
-    <p>El mundo de los videojuegos ha evolucionado muchísimo con el paso de los años, pero no podemos olvidar sus raíces.
-    Los juegos retro forman parte de nuestra historia cultural y tecnológica: consolas clásicas, cartuchos, arcades y personajes que marcaron generaciones enteras.</p>
-    <p>El objetivo de esta campaña es dar a conocer y preservar los videojuegos retro, transmitiendo a las nuevas generaciones la magia de jugar en 8 y 16 bits, de escuchar esas melodías chiptune y de revivir la emoción de los primeros mandos.</p>
-  </header>
-<img style="height: 500px;" src="https://media.revistagq.com/photos/606ef697b28546b3a65537ef/16:9/w_2160,h_1215,c_limit/juegos-retro-80.png" class="card-img-top" alt="Portada">
+  
+    <div id="inicio" class="seccion mt-5 fade-in">
+      <h2>Inicio</h2>
+      <p>Bienvenido a <strong>Salvemos los Juegos Retro</strong>, un proyecto dedicado a preservar la historia y cultura
+        de los videojuegos clásicos.</p>
+      <img
+        src="https://media.revistagq.com/photos/606ef697b28546b3a65537ef/16:9/w_2160,h_1215,c_limit/juegos-retro-80.png"
+        class="img-fluid mt-3" style="max-height:400px;">
+    </div>
 
-  <footer class="bg-dark text-white text-center py-3">
+    <div id="proyectos" class="seccion mt-5 fade-in">
+      <h2>Proyectos</h2>
+      <input type="text" id="buscador" class="form-control mb-4 w-50 mx-auto" placeholder="Buscar proyecto...">
+      <div class="row" id="grid-proyectos">
+        <div class="col-md-4 mb-3 proyecto">
+          <div class="card">
+            <img src="./assets/img/nes.jpg" class="card-img-top" alt="NES">
+            <div class="card-body">
+              <h5>Nintendo NES</h5>
+              <p>La consola que revolucionó los 80.</p>
+              <button class="btn btn-warning btn-sm btn-detalle">Ver más</button>
+              <p class="descripcion mt-2" style="display:none;">Lanzada en 1983, marcó una nueva era con títulos como
+                Mario Bros y Zelda.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 proyecto">
+          <div class="card">
+            <img src="./assets/img/play.jpg" class="card-img-top" alt="PlayStation">
+            <div class="card-body">
+              <h5>PlayStation</h5>
+              <p>El inicio de una nueva era en 3D.</p>
+              <button class="btn btn-warning btn-sm btn-detalle">Ver más</button>
+              <p class="descripcion mt-2" style="display:none;">Sony revolucionó los 90 con sus gráficos 3D y juegos
+                legendarios.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3 proyecto">
+          <div class="card">
+            <img src="./assets/img/gb.jpg" class="card-img-top" alt="Game Boy">
+            <div class="card-body">
+              <h5>Game Boy</h5>
+              <p>Llevando la diversión portátil.</p>
+              <button class="btn btn-warning btn-sm btn-detalle">Ver más</button>
+              <p class="descripcion mt-2" style="display:none;">Una revolución portátil con Tetris y Pokémon a la
+                cabeza.</p>
+            </div>
+          </div>
+        </div>
+
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 proyecto">
+      <div class="card">
+        <img src="./assets/img/atari.webp" class="card-img-top" alt="Atari">
+        <div class="card-body">
+          <h5 class="card-title">Atari</h5>
+          <p class="card-text">Reina de arcades.</p>
+          <button class="btn btn-warning btn-sm btn-detalle">Ver más</button>
+          <p class="descripcion mt-2 text-muted" style="display:none;">El inicio de todo: máquinas arcade y las primeras
+            consolas domésticas.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 col-sm-12 mb-4 proyecto">
+      <div class="card">
+        <img src="./assets/img/polybius.webp" class="card-img-top" alt="Atari">
+        <div class="card-body">
+          <h5 class="card-title">Polybius</h5>
+          <p class="card-text">Leyenda urbana y misterio.</p>
+          <button class="btn btn-warning btn-sm btn-detalle">Ver más</button>
+          <p class="descripcion mt-2 text-muted" style="display:none;">Una arcade que, según decían, provocaba muertes a la hora de jugar.</p>
+        </div>
+      </div>
+    </div>
+
+   <div class="col-lg-4 col-md-6 col-sm-12 mb-4 proyecto">
+      <div class="card">
+        <img src="./assets/img/mgdrive.webp" class="card-img-top" alt="Atari">
+        <div class="card-body">
+          <h5 class="card-title">MegaDrive</h5>
+          <p class="card-text">El inicio de una etapa rebelde</p>
+          <button class="btn btn-warning btn-sm btn-detalle">Ver más</button>
+          <p class="descripcion mt-2 text-muted" style="display:none;">Flow 90s y juegos mas avanzados para la época.</p>
+        </div>
+      </div>
+    </div>
+   </div>
+    </div>
+
+ <div id="eventos" class="seccion mt-5 fade-in">
+  <h2>Eventos Retro Gaming</h2>
+  <div class="row g-4">
+
+    <div class="col-md-6 col-sm-12">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5>Expo Arcade Clásico</h5>
+          <p>12 Abril 2025 - Madrid</p>
+          <button class="btn btn-warning btn-sm btn-precio">Ver precio</button>
+          <p class="precio mt-2" style="display:none;">15€</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5>Retrogamer Fest</h5>
+          <p>3 Junio 2025 - Barcelona</p>
+          <button class="btn btn-warning btn-sm btn-precio">Ver precio</button>
+          <p class="precio mt-2" style="display:none;">Gratis</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5>Noche de Consolas Retro</h5>
+          <p>20 Agosto 2025 - Bilbao</p>
+          <button class="btn btn-warning btn-sm btn-precio">Ver precio</button>
+          <p class="precio mt-2" style="display:none;">10€</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5>Pixel Expo</h5>
+          <p>10 Octubre 2025 - Valencia</p>
+          <button class="btn btn-warning btn-sm btn-precio">Ver precio</button>
+          <p class="precio mt-2" style="display:none;">12€</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5>Chiptune Live</h5>
+          <p>15 Diciembre 2025 - Sevilla</p>
+          <button class="btn btn-warning btn-sm btn-precio">Ver precio</button>
+          <p class="precio mt-2" style="display:none;">8€</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 col-sm-12">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5>RetroLAN Party</h5>
+          <p>2 Febrero 2026 - Zaragoza</p>
+          <button class="btn btn-warning btn-sm btn-precio">Ver precio</button>
+          <p class="precio mt-2" style="display:none;">€</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+  <div id="contacto" class="seccion mt-5 fade-in">
+    <h2>Contáctanos</h2>
+    <form id="formContacto" class="col-md-6 mx-auto">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="nombre" required>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="email" required>
+      </div>
+      <div class="mb-3">
+        <label for="mensaje" class="form-label">Mensaje</label>
+        <textarea class="form-control" id="mensaje" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-warning">Enviar</button>
+    </form>
+  </div>
+  </div>
+
+  <div class="modal fade" id="modalConfirmacion" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark text-light border-warning">
+        <div class="modal-header border-warning">
+          <h5 class="modal-title text-warning">¡Gracias!</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">Tu mensaje se envió correctamente. ¡Gracias por contactarnos!</div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center py-3 mt-5 text-secondary">
     © 2025 Salvemos los Juegos Retro
   </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/jquery.js"></script>
 </body>
+
 </html>
