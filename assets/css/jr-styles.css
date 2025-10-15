@@ -7,3 +7,105 @@ h1, h2, h3 {
 img {
     height: 500px;
 }
+.seccion { display: none; }
+.menu-btn {
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+.menu-btn:hover {
+      transform: scale(1.05);
+    }
+body {
+      background-color: #0b0b0b;
+      color: #f5f5f5;
+      font-family: 'Silkscreen', cursive;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    h1, h2 {
+      font-family: 'Press Start 2P', cursive;
+    }
+
+    h1 {
+      color: #ffcc00;
+      text-shadow: 0 0 10px #ffcc00;
+    }
+
+    h2 {
+      color: #ffd966;
+      text-shadow: 0 0 8px #ffcc00;
+    }
+
+    .menu-btn {
+      background: #1a1a1a;
+      border: 2px solid #ffcc00;
+      color: #ffcc00;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .menu-btn:hover {
+      background: #ffcc00;
+      color: #1a1a1a;
+      transform: scale(1.05);
+      box-shadow: 0 0 10px #ffcc00;
+    }
+
+    .card {
+      background-color: #222;
+      border: 1px solid #555;
+      color: #f5f5f5;
+      box-shadow: 0 0 5px #000;
+    }
+
+    .btn-warning {
+      background-color: #ffcc00;
+      color: #000;
+      border: none;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 10px;
+    }
+
+    .btn-warning:hover {
+      background-color: #fff000;
+      box-shadow: 0 0 10px #ffcc00;
+    }
+
+    .form-control, textarea {
+      background-color: #111;
+      color: #f5f5f5;
+      border: 1px solid #555;
+    }
+
+    .form-control:focus {
+      border-color: #ffcc00;
+      box-shadow: 0 0 5px #ffcc00;
+    }
+
+    footer {
+      font-size: 12px;
+      border-top: 1px solid #333;
+    }
+
+    /* Animaciones suaves */
+    .fade-in {
+      animation: aparecer 0.4s ease-in-out;
+    }
+
+    @keyframes aparecer {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .seccion {
+      display: none;
+    }
+
+    img {
+      border-radius: 10px;
+      border: 2px solid #333;
+    }
+
+    .descripcion {
+      font-size: 11px;
+      color: #ccc;
+    }
